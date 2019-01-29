@@ -1,0 +1,1 @@
+﻿ls | Get-FileHash -Algorithm MD5 | Select-Object Hash, @{Name="Path";Expression={Split-Path $_.Path -leaf}}
